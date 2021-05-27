@@ -1,0 +1,48 @@
+.sidebar {
+  margin-top: 45px;
+  height: 100%;
+  width: 150px;
+  top: 0;
+  left: 0;
+  position: fixed;
+  overflow-x: hidden; /* Disables horizontal scroll*/
+  padding-left: 3px;
+  padding-top: 5px;
+  padding-right: 3px;
+  align-content: flex-start;
+  border-radius: 1px;
+  background-color: black;
+  color: aliceblue;
+}
+
+.primary-content {
+  margin-left: 150px;  /*Width of the sidebar*/
+  padding: 4px;
+  justify-content: flex-start;
+  background-color: inherit;
+  color: aliceblue;
+}
+
+#picture-section {
+  padding: 30px;
+  padding-left: 120px;
+  margin: 20px, 10px, 30px, 30px;
+}
+
+#picture-section > img {
+  border-radius: 40%;
+}
+
+.float-child {
+  width: auto;
+  float:left;
+}
+.float-child:second-child {
+  padding:50px;
+}
+
+/* If screen is smaller, change the style of the sidebar */
+@media screen and (max-height: 450px) {
+  .sidebar { padding-top: 15px; }
+  .sidebar a {font-size:16px;}
+}
