@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { PC } from './pc';
-import { CHARACTERS } from './mock-char';
 import { Observable, of } from 'rxjs';
 import { catchError, map, tap } from 'rxjs/operators';
 import { MessageService } from './message.service';
@@ -72,7 +71,7 @@ export class MailService {
   searchCharacters(term:string):Observable<PC[]> {
     if(!term.trim()) {
       //if ain't search term, return empty array
-      retun of([]);
+      return of([]);
     }
     return this.http.get<PC[]>(`${this.characterURL}/?name=${term}`).pipe(
       tap(x => x.length ?
@@ -99,8 +98,5 @@ export class MailService {
       //Let the app keep running by returning an empty result
       return of(result as T);
     };
-  }
-  
-    }
   }
 }

@@ -13,6 +13,9 @@ import { MessagesComponent } from './messages/messages.component';
 import { AppRoutingModule } from './app-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { CharacterSearchComponent } from './character-search/character-search.component';
+import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
+import { HomepageComponent } from './homepage/homepage.component';
+import { EncounterGeneratorComponent } from './encounter-generator/encounter-generator.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,10 @@ import { CharacterSearchComponent } from './character-search/character-search.co
     BackstoryComponent,
     MessagesComponent,
     DashboardComponent,
-    CharacterSearchComponent
+    CharacterSearchComponent,
+    NavigationBarComponent,
+    HomepageComponent,
+    EncounterGeneratorComponent
   ],
   imports: [
     BrowserModule,
@@ -41,6 +47,7 @@ import { CharacterSearchComponent } from './character-search/character-search.co
 export class AppModule { }
 
 //Last left off at 
-/*
-https://angular.io/tutorial/toh-pt6#asyncpipe
+/* 
+ * Completed Tutorial 
+https://angular.io/guide/architecture
 */

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { Observable, Subject } from 'rxjs';
-import { debounceTime, distinctUntilChanged, swtichMap } from 'rxjs/operators';
+import { debounceTime, distinctUntilChanged, switchMap } from 'rxjs/operators';
 import { PC } from '../pc';
 import { MailService } from '../mail.service';
 
@@ -18,7 +18,7 @@ export class CharacterSearchComponent implements OnInit {
   
   // Push a search term into the observable stream
   search(term:string):void {
-    this.searchTermss.next(term);
+    this.searchTerms.next(term);
   }
 
   ngOnInit(): void {

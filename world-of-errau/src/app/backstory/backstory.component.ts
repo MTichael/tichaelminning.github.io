@@ -33,7 +33,7 @@ export class BackstoryComponent implements OnInit {
   }
   
   save(): void {
-    this.mailService.updateHero(this.character).subscribe(()=>this.goBack());
+    this.mailService.updateCharacter(this.character).subscribe(()=>this.goBack());
   }
 
 }

@@ -11,10 +11,10 @@ import { MailService } from '../mail.service';
 })
 export class PlayerCharactersComponent implements OnInit {
   characters: PC[];
-  shield: PC = {
-      id: 10,
-      name: "Elsin Gaebora"
-  }
+//  shield: PC = {
+//      id: 10,
+//      name: "Elsin Gaebora"
+//  }
     
   constructor(private mailservice: MailService) { }
 
