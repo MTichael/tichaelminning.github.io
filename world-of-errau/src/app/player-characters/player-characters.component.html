@@ -1,0 +1,37 @@
+<h2>Characters</h2>
+<div>
+  <label id="new-character">Character name: </label>
+  <input for="new-character" #characterName />
+  
+  <button class="add-button" (click)="add(characterName.value);characterName.value=''">
+    Add Character
+  </button>
+</div>
+<!--
+<div>
+  <ul class="characters">
+    <li>
+        <span class="badge">{{shield.id}}</span> {{shield.name}}
+    </li>
+  </ul>
+</div>
+-->
+<div>
+  <ul class="characters">
+      <li *ngFor="let character of characters">
+        <a routerLink="/backstory/{{character.id}}">
+          <span class="badge">{{character.id}}</span> {{character.name}}
+        </a>
+        <button class="delete" title="delete character" (click)="delete(character)">X</button>
+      </li>
+  </ul>
+</div>
+
+<!--<app-backstory [character]="selectedCharacter"></app-backstory>-->
+
+<!--   ngModel - Angular two-way binding 
+<label>
+        <input [(ngModel)]="shield.name" placeholder="name" />
+    </label>
+
+-->
