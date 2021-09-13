@@ -16,6 +16,7 @@ import { CharacterSearchComponent } from './character-search/character-search.co
 import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { EncounterGeneratorComponent } from './encounter-generator/encounter-generator.component';
+import { CampaignsComponent } from './campaigns/campaigns.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { EncounterGeneratorComponent } from './encounter-generator/encounter-gen
     CharacterSearchComponent,
     NavigationBarComponent,
     HomepageComponent,
-    EncounterGeneratorComponent
+    EncounterGeneratorComponent,
+    CampaignsComponent
   ],
   imports: [
     BrowserModule,
